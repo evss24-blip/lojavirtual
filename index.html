@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lumière Joias</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="bg-primary text-white text-center py-2">
+    Frete grátis acima de R$ 99,90
+  </div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Lumière Joias</a>
+ 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+ 
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Categorias</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Colar</a></li>
+              <li><a class="dropdown-item" href="#">Brinco</a></li>
+              <li><a class="dropdown-item" href="#">Pulseira</a></li>
+              <li><a class="dropdown-item" href="#">Anel</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Ofertas</a></li>
+        </ul>
+ 
+        <form class="d-flex me-lg-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar produtos...">
+          <button class="btn btn-outline-primary">Buscar</button>
+        </form>
+ 
+         <!-- Carrinho com contador -->
+        <a href="#" class="btn btn-outline-dark position-relative mt-2 mt-lg-0">
+          <i class="bi bi-cart3"></i>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://http2.mlstatic.com/D_Q_NP_696250-CBT109668861939_032026-O.webp" class="d-block w-100" alt="conjunto de joias">
+    </div>
+    <div class="carousel-item">
+      <img src="https://down-br.img.susercontent.com/file/sg-11134201-824ir-mei8b15spt6p26" class="d-block w-100" alt="colar e brinco">
+    </div>
+    <div class="carousel-item">
+      <img src="https://img.magnific.com/fotos-gratis/mulher-elegante-com-joias-de-ouro_23-2151934106.jpg?semt=ais_hybrid&w=740&q=80" class="d-block w-100" alt="colar e brinco">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+  <div class="container">
+    <h2 class="mt-4">Categorias</h2>
+    <div class="row g-3">
+      <div class="col-lg-2 col-4">
+        <div class="card text-center p-2">Colar</div>
+      </div>
+      <div class="col-lg-2 col-4">
+        <div class="card text-center p-2">Brinco</div>
+      </div>
+        <div class="col-lg-2 col-4">
+          <div class="card text-center p-2">Pulseira</div>
+        </div>
+        <div class="col-lg-2 col-4">
+          <div class="card text-center p-2">Anel</div>
+        </div>
+       
+          <div class="col-lg-2 col-4">
+            <div class="card text-center p-2">Bracelete</div>
+          </div>
+          <div class="col-lg-2 col-4">
+            <div class="card text-center p-2">Tiara</div>
+          </div>
+        </div>
+      </div>
+    
+
+
+    <h2 class="mt-4">Destaques</h2>
+    <div class="row g-3">
+      <div class="col-lg-3 col-md-6">
+        <div class="card h-100">
+          <span class="badge text-bg-danger position-absolute m-2">Promoção</span>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwF-MsAD-9KTlJFzZxALZqm6GDpavW24b2wGWbt1kJL1Qy-WNXJuFUFkWM&s=10" class="card-img-top" alt="Produto">
+          <div class="card-body">
+            <h5 class="card-title">Colar Pêndulo </h5>
+            <p>Elegância e delicadeza em um colar estilo gravata com acabamento em ouro 18k. Perfeito para destacar qualquer produção.</p>
+            <p class="card-text">
+              <span class="text-muted text-decoration-line-through">R$ 200,00</span>
+              <strong class="text-danger">R$ 99,90 </strong>
+            </p>
+            <button class="btn btn-primary w-100">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+      <!-- repita a coluna col-lg-3 col-md-6 para ter 4 produtos -->
+
+    
+      <div class="col-lg-3 col-md-6">
+        <div class="card h-100">
+          <span class="badge text-bg-danger position-absolute m-2">Promoção</span>
+          <img src="https://img.kwcdn.com/product/fancy/db5e131b-9f72-455b-a149-165d3605914b.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" class="card-img-top" alt="Produto">
+          <div class="card-body">
+            <h5 class="card-title">Brinco</h5>
+            <p>Argolas em ouro 16k com cristais brilhantes que unem sofisticação e modernidade em uma única peça.</p>
+            <p class="card-text">
+              <span class="text-muted text-decoration-line-through">R$ 120,00</span>
+              <strong class="text-danger">R$ 89,99 </strong>
+            </p>
+            <button class="btn btn-primary w-100">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+      <!-- repita a coluna col-lg-3 col-md-6 para ter 4 produtos -->
+    
+      <div class="col-lg-3 col-md-6">
+        <div class="card h-100">
+          <span class="badge text-bg-danger position-absolute m-2">Promoção</span>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCdcTv9PnxRHhIYpyXP6pev8cMqz-f2_08vqs447UgA&s" class="card-img-top" alt="Produto">
+          <div class="card-body">
+            <h5 class="card-title">Pulseira</h5>
+            <p>Pulseira de elos em ouro 16k, ideal para quem busca um acessório clássico e versátil.</p>
+            <p class="card-text">
+              <span class="text-muted text-decoration-line-through">R$ 110,00</span>
+              <strong class="text-danger">R$ 69,90</strong>
+            </p>
+            <button class="btn btn-primary w-100">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+      <!-- repita a coluna col-lg-3 col-md-6 para ter 4 produtos -->
+      <div class="col-lg-3 col-md-6">
+        <div class="card h-100">
+          <span class="badge text-bg-danger position-absolute m-2">Promoção</span>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfoE-VQHr_wonQbxzvT44aXv8OtL-VBJLhwrGQRyf70bdOS6jrElu7ryI&s=10" class="card-img-top" alt="Produto">
+          <div class="card-body">
+            <h5 class="card-title">Anel</h5>
+            <p>Anel moderno em ouro 16k com design exclusivo, perfeito para compor looks elegantes e cheios de personalidade.</p>
+            <p class="card-text">
+              <span class="text-muted text-decoration-line-through">R$ 69,90</span>
+              <strong class="text-danger">R$ 49,99</strong>
+            </p>
+            <button class="btn btn-primary w-100">Adicionar ao carrinho</button>
+          </div>
+        </div>
+      </div>
+      <!-- repita a coluna col-lg-3 col-md-6 para ter 4 produtos -->
+    </div>
+  </div>
+
+ <section class="container my-5">
+    <div class="row g-3">
+ 
+      <div class="col-md-6">
+        <a href="#" class="banner-promo ratio ratio-16x9">
+          <img src="https://cdn.shoppub.io/cdn-cgi/image/w=1000,h=1000,q=80,f=auto/deluxo/media/uploads/produtos/foto/leastise/37.jpg" alt="Banner promocional A">
+          <div class="banner-texto">
+            <h3 class="mb-1">Até 40% off</h3>
+            <span>Colares e brincos selecionados</span>
+          </div>
+        </a>
+      </div>
+ 
+      <div class="col-md-6">
+        <a href="#" class="banner-promo ratio ratio-16x9">
+          <img src="https://images.tcdn.com.br/img/img_prod/680812/pulseira_bracelete_pingente_cor_perola_folheado_a_2_20260217094632_f45aef80ed7b.jpg" alt="Banner nova coleção">
+          <div class="banner-texto">
+            <h3 class="mb-1">Nova coleção</h3>
+            <span>Pulseiras e braceletes</span>
+          </div>
+        </a>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- ================= BENEFÍCIOS ================= -->
+  <section class="bg-light py-4">
+    <div class="container">
+      <div class="row g-4 text-center text-md-start">
+ 
+        <div class="col-md-4">
+          <div class="beneficio d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+            <i class="bi bi-truck text-primary"></i>
+            <div>
+              <strong>Entrega para todo o Brasil</strong>
+              <div class="text-muted small">Frete grátis acima de R$ 99,90</div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-md-4">
+          <div class="beneficio d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+            <i class="bi bi-shield-lock text-primary"></i>
+            <div>
+              <strong>Pagamento seguro</strong>
+              <div class="text-muted small">Seus dados protegidos</div>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="col-md-4">
+          <div class="beneficio d-flex align-items-center justify-content-center justify-content-md-start gap-3">
+            <i class="bi bi-arrow-repeat text-primary"></i>
+            <div>
+              <strong>Troca grátis em 30 dias</strong>
+              <div class="text-muted small">Sem complicação</div>
+            </div>
+          </div>
+        </div>
+ 
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ================= NEWSLETTER ================= -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h3 class="mb-3">Receba nossas ofertas</h3>
+      <form class="row g-2 justify-content-center" onsubmit="event.preventDefault(); alert('Obrigada por assinar!');">
+        <div class="col-12 col-md-6 col-lg-4">
+          <input type="email" class="form-control" placeholder="seu e-mail" required>
+        </div>
+        <div class="col-12 col-md-auto">
+          <button type="submit" class="btn btn-dark w-100">Assinar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+ 
+  <!-- ================= RODAPÉ ================= -->
+  <footer class="bg-body-secondary pt-5">
+    <div class="container">
+      <div class="row g-4">
+ 
+        <div class="col-6 col-md-3">
+          <h6 class="fw-bold">Institucional</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-muted">Sobre nós</a></li>
+            <li><a href="#" class="text-muted">Política de privacidade</a></li>
+            <li><a href="#" class="text-muted">Termos de uso</a></li>
+          </ul>
+        </div>
+ 
+        <div class="col-6 col-md-3">
+          <h6 class="fw-bold">Ajuda</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#" class="text-muted">Como comprar</a></li>
+            <li><a href="#" class="text-muted">Trocas e devoluções</a></li>
+            <li><a href="#" class="text-muted">Fale conosco</a></li>
+          </ul>
+        </div>
+ 
+        <div class="col-6 col-md-3">
+          <h6 class="fw-bold">Redes sociais</h6>
+          <div class="d-flex gap-3 fs-4">
+            <a href="#" class="text-dark" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-dark" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-dark" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+ 
+        <div class="col-6 col-md-3">
+          <h6 class="fw-bold">Formas de pagamento</h6>
+          <div class="d-flex flex-wrap gap-2 fs-3">
+            <i class="bi bi-credit-card"></i>
+            <i class="bi bi-qr-code"></i>
+            <i class="bi bi-upc-scan"></i>
+          </div>
+        </div>
+ 
+      </div>
+ 
+      <hr class="mt-4">
+      <p class="text-center text-muted small pb-3 mb-0">
+        &copy; 2026 Lumière Joias — CNPJ 00.000.000/0000-00
+      </p>
+    </div>
+  </footer>
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

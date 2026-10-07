@@ -1,0 +1,118 @@
+/* ===== 1. VARIÁVEIS (paleta e fontes num lugar só) ===== */
+:root {
+  --tinta: #1f1b24;
+  --dourado: #a8844f;
+  --dourado-escuro: #8c6c3b;
+  --rosado: #f7efee;
+  --vinho: #7a2438;
+ 
+  /* faz as classes do Bootstrap (bg-primary, text-primary...) usarem sua paleta */
+  --bs-primary: var(--dourado);
+  --bs-primary-rgb: 168, 132, 79;
+  --bs-danger: var(--vinho);
+  --bs-danger-rgb: 122, 36, 56;
+  --bs-body-font-family: 'Jost', system-ui, sans-serif;
+  --bs-body-color: var(--tinta);
+}
+ 
+/* ===== 2. TIPOGRAFIA ===== */
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+}
+h2 { font-size: 2rem; }
+.navbar-brand { font-size: 1.6rem; letter-spacing: .02em; }
+ 
+/* ===== 3. BOTÕES (o Bootstrap usa variáveis próprias) ===== */
+.btn-primary {
+  --bs-btn-bg: var(--tinta);
+  --bs-btn-border-color: var(--tinta);
+  --bs-btn-hover-bg: var(--dourado-escuro);
+  --bs-btn-hover-border-color: var(--dourado-escuro);
+  --bs-btn-active-bg: var(--dourado-escuro);
+  --bs-btn-active-border-color: var(--dourado-escuro);
+  border-radius: 0;
+}
+.btn-outline-primary {
+  --bs-btn-color: var(--tinta);
+  --bs-btn-border-color: var(--tinta);
+  --bs-btn-hover-bg: var(--tinta);
+  --bs-btn-hover-border-color: var(--tinta);
+  --bs-btn-active-bg: var(--tinta);
+  border-radius: 0;
+}
+ 
+/* ===== 4. CATEGORIAS EM CÍRCULO ===== */
+.categoria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  color: inherit;
+  text-decoration: none;
+}
+.categoria-circulo {
+  width: 96px;
+  height: 96px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  background: var(--rosado);
+  color: var(--dourado);
+  font-size: 2rem;
+  border: 2px solid transparent;
+  transition: border-color .2s;
+  
+}
+.categoria-circulo img { width: 100%; height: 100%; object-fit: cover; }
+.categoria:hover .categoria-circulo { border-color: var(--dourado); }
+ 
+/* ===== 5. PRODUTOS ===== */
+.card { border-radius: 0; border-color: #e6dede; }
+.card-img-top { aspect-ratio: 1 / 1; object-fit: cover; } /* todas as fotos do mesmo tamanho */
+ 
+/* ===== 6. BANNERS PROMOCIONAIS ===== */
+.banner-promo {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+.banner-promo img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s; }
+.banner-promo:hover img { transform: scale(1.05); }
+.banner-promo .banner-texto {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(31, 27, 36, .4);
+  color: #fff;
+  text-align: center;
+}
+ 
+/* ===== 7. BENEFÍCIOS, NEWSLETTER E RODAPÉ ===== */
+.beneficio i { font-size: 2rem; color: var(--dourado); }
+section.bg-light { background: var(--rosado) !important; }
+footer { background: var(--rosado); }
+footer a { text-decoration: none; }
+footer a:hover { text-decoration: underline; }
+ 
+/* ===== 8. ACESSIBILIDADE ===== */
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--dourado);
+  outline-offset: 2px;
+}
+ 
+/* ===== CARROSSEL ===== */
+.carousel-item {
+  background: var(--rosado);   /* cor que preenche as laterais */
+}
+.carousel-item img {
+  width: 100%;
+  height: 55vh;
+  min-height: 260px;
+  max-height: 520px;
+  object-fit: contain;         /* mostra a foto inteira, sem cortar */
+}
